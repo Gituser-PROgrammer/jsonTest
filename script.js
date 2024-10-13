@@ -1,3 +1,5 @@
 fetch("./meow.json")
     .then(response => response.json())
+    .then(value => console.log(value.name))
+    .then(value => console.log(value.age))
     .then(value => console.log(value.coder))
